@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <p id="next">next</p>
+  <p id="previous">previous</p>
+
+
+  <script>
+
+    const p = document.getElementById("next");
+    const p2 = document.getElementById("previous");
+
+    const songs = [
+    {
+        file: "song1.mp3",
+        name: "Fether",
+        arther: "Bille"
+    },
+    {
+        file: "song2.mp3",   
+        name: "Imagine",
+        artist: "John Lennon"
+    },
+    {
+        file: "song3.mp3",  
+        name: "Night Changes",
+        artist: "One Direction"
+    },
+
+]
+let i = 0;
+p.addEventListener("click", (e) => {
+  // i = 0;
+  if(i< songs.length){
+    console.log(songs[i]);
+    console.log(i);
+    i++;
+  } 
+    })
+
+
+
+p2.addEventListener("click", (e) => {
+  if(i>=0){
+    console.log(songs[i]);
+    console.log(i);
+
+    i--;
+  }
+})
+
+
+  </script>
+</body>
+</html>

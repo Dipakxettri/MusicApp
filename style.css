@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(25, 5, 95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.app{
+    /* height: 800px; */
+    width: 500px;
+    background-color: rgb(225, 230, 231);
+    border-radius: 20px;
+}
+
+.app .menue-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+}
+
+.app .menue-1 a{
+    color: black;
+
+}
+
+.app .menue-1 a i{
+    font-size: 28px;
+}
+.app #logo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.app #logo img{
+    height: 440px;
+    border-radius: 20px;
+}
+
+.app #names{
+    padding: 40px 40px 20px 40px;
+    line-height: 40px;
+}
+
+.app #names #name{
+    font-size: 2em;
+}
+
+#buttons{
+    /* height: 70px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+}
+/* height: 70px; */
+button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.menue-2{
+    position: fixed;
+    height: 740px;
+    width: 500px;
+    background-color: rgb(225, 230, 231);
+    z-index: 4;
+}
+
+.hide{
+    display: none;
+}
+
+#progress{
+    width: 100%;
+    
+}
+

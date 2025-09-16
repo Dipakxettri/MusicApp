@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e35cf7b207.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="app">
+
+        <div class="menue-1">
+            <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="#" class="menue-btn" id="m"><i class="fa-solid fa-bars"></i></a>
+            <a href="" class="menue-btn hide" id="x"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+
+        <div class="menue-2 hide">
+
+        </div>
+
+
+
+
+        <div id="logo">
+            <img src="logo.png" alt="">
+        </div>
+
+
+
+        <div id="names">
+            <h3 id="name">Father</h3>
+            <p id="aurther">Bille</p>
+
+            <audio controls id="audio" class="hide" src="">
+                
+            </audio>
+
+            <input type="range" id="progress" value="0" min="0" max="100">
+        </div>
+
+        <div id="buttons">
+            <button><i class="fa-solid fa-heart"></i></button>
+            <button id="previous"><i class="fa-solid fa-backward-step"></i></button>
+            <button class="playPase" id="play"><i class="fa-solid fa-play"></i></button>
+            <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+            <button><i class="fa-solid fa-repeat"></i></button>
+        </div>
+
+
+    </div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
