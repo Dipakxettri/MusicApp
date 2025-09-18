@@ -40,8 +40,8 @@ body{
     gap: 20px;
 }
 .app #logo img{
-    height: 440px;
-    border-radius: 20px;
+    height: 400px;
+    border-radius: 50%;
 }
 
 .app #names{

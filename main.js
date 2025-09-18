@@ -2,18 +2,23 @@
 const songs = [
     {
         file: "song1.mp3",
-        name: "Fether",
-        artist: "Bille"
+        name: "Birds of a feather ",
+        artist: "Billie Eilish",
+        logo:"song1.jpg"
     },
     {
         file: "song2.mp3",   
         name: "Imagine",
-        artist: "John Lennon"
+        artist: "John Lennon",
+        logo:"song2.jpg"
+
     },
     {
         file: "song3.mp3",  
         name: "Night Changes",
-        artist: "One Direction"
+        artist: "One Direction",
+        logo:"song3.jpg"
+
     },
 
 ]
@@ -29,6 +34,7 @@ const btn_2 = document.querySelector("#x");
 const progress = document.getElementById("progress")
 const next_btn = document.getElementById("next");
 const previous_btn = document.getElementById("previous");
+const song_logo = document.getElementById("songLogo");
 
 //Handel menue:
 menue_btn.addEventListener('click', () => {
@@ -58,9 +64,6 @@ playPase.addEventListener("click", () => {
         playPase.setAttribute("id", "play");
         playPase.innerHTML = "";
         playPase.innerHTML = '<i class="fa-solid fa-play"></i>';
-        
-
-
     }
 })
 
@@ -75,6 +78,7 @@ const playSong = (index) => {
         song_name.innerHTML = songs[index].name;
         song_arther.innerHTML = songs[index].artist;
         audio.src = songs[index].file;
+        song_logo.src = songs[index].logo;
         audio.play();
 }
 
@@ -88,11 +92,7 @@ previous_btn.addEventListener("click", () => {
     i = i - 1;
     if(i < 0)i = songs.length - 1;
     playSong(i);
-    
 })
-
-
-
 
 // Handel some times and progress:
 audio.addEventListener("timeupdate", () => {
@@ -104,7 +104,8 @@ progress.addEventListener("input", () => {
     audio.currentTime = (progress.value / 100) * audio.duration;
 })
 
+// progress.addEventListener("click", () => {
 
-
+// })
 
 
